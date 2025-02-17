@@ -11,7 +11,7 @@ author_profile: true
 
 - *Ph.D. in Economics*: Macroeconomic Theory
 - *M.Sc. in Applied Economics*: Quantitative Methods 
-- *Undergraduate*: Principles of Macroeconomics, IntermediateMacroeconomics andMicroeconomics, and Behavioral Economics 
+- *Undergraduate*: Principles of Macroeconomics, Intermediate Macroeconomics and Microeconomics, and Behavioral Economics 
 
 ## Lecturer, Universidad Tecnica Federico Santa Maria (Chile)
 
