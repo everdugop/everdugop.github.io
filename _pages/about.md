@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am an Economics Ph.D. Candidate at the University of Michigan interested in development and labor economics.
+I am an Economics Ph.D. Candidate at the University of Michigan interested in macroeconomics and international economics.
 
-I am from Santiago, Chile. I graduated from Universidad de Chile with a B.A. in Economics in 2010 and an M.S. in Economics in 2014. I also obtained a Master of Public Policy from the University of Michigan in 2021.
+I am from Santiago, Chile. I graduated from Universidad de Chile with a B.A. and M.S. in Economics.
 
-Here is my [CV](https://tyentzen.github.io/files/CV_yentzen.pdf).
+Here is my [CV](https://everdugop.github.io/files/Verdugo_CV.pdf).
 
-Email: [trianay@umich.edu](mailto:trianay@umich.edu)
+Email: [everdugo@umich.edu](mailto:everdugo@umich.edu)
