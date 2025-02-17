@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Triana Yentzen"
+title                    : "Esteban Verdugo"
 title_separator          : "-"
-name                     : &name "Triana Yentzen"
+name                     : &name "Esteban Verdugo"
 description              : &description "personal description"
-url                      : https://tyentzen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://everdugop.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "tyentzen/tyentzen.github.io"
+repository               : "everdugop/everdugop.github.io"
 port                     : 4040
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -23,10 +23,10 @@ port                     : 4040
 author:
   # Biographic information
   avatar           : "profile.jpeg"
-  name             : "Triana Yentzen"
+  name             : "Esteban Verdugo"
   pronouns         : # example: "she/her"  
   bio              : "Economics Ph.D. Candidate, University of Michigan"
-  email            : "trianay@umich.edu"
+  email            : "everdugo@umich.edu"
 
   # Social media
   linkedin         : 'trianayentzen'
