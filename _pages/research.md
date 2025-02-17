@@ -21,5 +21,5 @@ You can also find my articles on <u><a href="{{author.googlescholar}}">my Google
 
 ## Work in progress
 
-“Trade Credit and Collateral Market Valuation”
+"Trade Credit and Collateral Market Valuation"
 
