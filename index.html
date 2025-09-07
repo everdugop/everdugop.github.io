@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triana Yentzen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 900px !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <div class="flex items-center space-x-2">
+                <!-- Mobile Menu Button -->
+                <button id="menu-button" class="md:hidden text-gray-800 text-2xl focus:outline-none z-50">&#9776;</button>
+                <a href="#" class="text-xl font-bold text-gray-800">Esteban Verdugo</a>
+            </div>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
+                <a href="#publications" class="text-gray-600 hover:text-gray-900 transition-colors duration-300 hidden">Publications</a>
+                <a href="#working-papers" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Working Papers</a>
+                <a href="#work-in-progress" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Work in Progress</a>
+                <a href="#teaching" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Teaching</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="menu-overlay" class="hidden fixed top-0 left-0 w-full h-full bg-white z-40 flex flex-col justify-center items-center space-y-8">
+        <button id="close-menu" class="absolute top-6 left-6 text-gray-800 text-3xl focus:outline-none">&times;</button>
+        <a href="#about" class="text-3xl text-gray-800 hover:text-gray-900 transition-colors duration-300" onclick="closeMenu()">About</a>
+        <a href="#publications" class="text-3xl text-gray-800 hover:text-gray-900 transition-colors duration-300 hidden" onclick="closeMenu()">Publications</a>
+        <a href="#working-papers" class="text-3xl text-gray-800 hover:text-gray-900 transition-colors duration-300" onclick="closeMenu()">Working Papers</a>
+        <a href="#work-in-progress" class="text-3xl text-gray-800 hover:text-gray-900 transition-colors duration-300" onclick="closeMenu()">Work in Progress</a>
+        <a href="#teaching" class="text-3xl text-gray-800 hover:text-gray-900 transition-colors duration-300" onclick="closeMenu()">Teaching</a>
+    </div>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Section (now includes contact info) -->
+        <section id="about" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <div class="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden shadow-lg border-4 border-gray-200">
+                    <img src="images/profile.jpg" alt="Your Photo" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-2xl font-bold text-gray-900">Esteban Verdugo</h1>
+                    <p class="text-xl text-gray-600 mt-2">PhD Candidate, University of Michigan.</p>
+                    <p class="mt-4 text-gray-700 leading-relaxed max-w-2xl text-sm">
+                    I am an Economics Ph.D. Candidate at the University of Michigan interested in macroeconomics and international economics.</p>
+                    <p class="mt-4 text-gray-700 leading-relaxed max-w-2xl text-sm">
+                    I am from Santiago, Chile. I graduated from Universidad de Chile with a B.A. and M.S. in Economics.</p>
+                    <p class="text-gray-700 mt-4 text-sm"><span class="font-semibold">Email:</span> <a href="mailto:everdugo@umich.edu" class="text-blue-600 hover:underline text-sm">everdugo@umich.edu</a></p>
+                    <div class="mt-4 flex items-center space-x-4 justify-center md:justify-start">
+                        <a href="files/Verdugo_CV.pdf" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="bg-white rounded-lg shadow-md p-8 mb-12 hidden">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Publications</h2>
+
+            <!-- Publication Item 1 -->
+            <div class="mb-6">
+                <h3 class="text-base font-semibold text-gray-800">“Aggregate Implications of Heterogeneous Inflation Expectations: The Role of Individual Experience”</h3>
+		<p class="text-gray-600 text-sm mt-1">with <a href="https://www.mathieupedemonte.com/" class="text-gray-600 text-sm mt-1">Mathieu Pedemonte</a> and <a href="https://hiroshitoma.github.io/" class="text-gray-600 text-sm mt-1">Hiroshi Toma</a></p>
+                <p class="text-gray-800 text-sm mt-1">The Economic Journal</p>
+
+                <p id="abstract-pub-1" class="text-gray-700 leading-relaxed max-w-2xl mt-2 hidden text-xs">
+                    We show that inflation expectations are heterogeneous and depend on past individual experiences. We propose a diagnostic expectations-augmented Kalman filter to represent consumers’ heterogeneous inflation expectations-formation process, where heterogeneity comes from an anchoring-to-the-past mechanism. We estimate the diagnosticity parameter that governs the inflation expectations-formation process and show that the model can replicate systematic differences in inflation expectations across cohorts in the US. We introduce this mechanism into a New Keynesian model and find that heterogeneous expectations anchor aggregate responses to the agents’ memory, making shocks more persistent. Central banks should be more active to prevent agents from remembering current shocks far into the future.                </p>
+                <div class="flex flex-wrap items-center space-x-4 mt-2">
+                    <button onclick="toggleAbstract('abstract-pub-1', this)" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Show Abstract</button>
+                    <a href="https://doi.org/10.26509/frbc-wp-202304" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Working Paper</a>
+                </div>
+            </div>
+            
+            <!-- Add more publications as needed -->
+
+        </section>
+        
+        <!-- Working Papers Section -->
+        <section id="working-papers" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Working Papers</h2>
+
+            <!-- Working Paper Item 1 -->
+            <div class="mb-6">
+                <h3 class="text-base font-semibold text-gray-800">“The Expectations of Hand-to-Mouth” (JMP)</h3>
+		        <p class="text-gray-600 text-sm mt-1">with <a href="https://www.mathieupedemonte.com/" class="text-gray-600 text-sm mt-1">Mathieu Pedemonte</a></p>
+                <p id="abstract-wp-1" class="text-gray-700 leading-relaxed max-w-2xl mt-2 hidden text-xs">
+                    Add abstract </p>
+                <div class="flex flex-wrap items-center space-x-4 mt-2">
+                    <button onclick="toggleAbstract('abstract-wp-1', this)" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Show Abstract</button>
+                    <a href="#" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Draft</a>
+                </div>
+		
+            </div>
+
+            <!-- Working Paper Item 2 -->
+            <div class="mb-6">
+                <h3 class="text-base font-semibold text-gray-800">“Aggregate Implications of Heterogeneous Inflation Expectations: The Role of Individual Experience”</h3>
+		        <p class="text-gray-600 text-sm mt-1">with <a href="https://www.mathieupedemonte.com/" class="text-gray-600 text-sm mt-1">Mathieu Pedemonte</a> and <a href="https://hiroshitoma.github.io/" class="text-gray-600 text-sm mt-1">Hiroshi Toma</a></p>
+                <p class="text-gray-800 text-sm mt-1">Revise and Resubmit, The Economic Journal</p>                
+                <p id="abstract-wp-2" class="text-gray-700 leading-relaxed max-w-2xl mt-2 hidden text-xs">
+                    We show that inflation expectations are heterogeneous and depend on past individual experiences. We propose a diagnostic expectations-augmented Kalman filter to represent consumers' heterogeneous inflation expectations-formation process, where heterogeneity comes from an anchoring-to-the-past mechanism. We estimate the diagnosticity parameter that governs the inflation expectations-formation process and show that the model can replicate systematic differences in inflation expectations across cohorts in the US. We introduce this mechanism into a New Keynesian model and find that heterogeneous expectations anchor aggregate responses to the agents’ memory, making shocks more persistent. Central banks should be more active to prevent agents from remembering current shocks far into the future.
+                </p>
+                <div class="flex flex-wrap items-center space-x-4 mt-2">
+                    <button onclick="toggleAbstract('abstract-wp-2', this)" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Show Abstract</button>
+                    <a href="https://doi.org/10.26509/frbc-wp-202304" class="inline-block px-2 py-1 bg-gray-200 text-gray-600 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300 text-xs">Working Paper</a>
+                </div>
+            </div>
+            
+            <!-- Add more working papers as needed -->
+
+        </section>
+
+        <!-- Work in Progress Section -->
+        <section id="work-in-progress" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Work in Progress</h2>
+
+            <!-- Work in Progress Item 1 -->
+            <div class="mb-6">
+                <h3 class="text-base font-semibold text-gray-800">“Trade Credit and Collateral Market Valuation”</h3>
+                <p class="text-gray-600 text-sm mt-1">Status: In Progress</p>
+                <p class="text-gray-700 mt-2 leading-relaxed text-sm">
+
+                </p>
+            </div>
+
+               
+            <!-- Add more work in progress items as needed -->
+
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="bg-white rounded-lg shadow-md p-8 mb-12">
+            <h2 class="text-xl font-bold text-gray-900 mb-6 border-b-2 border-gray-200 pb-2">Teaching</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-base font-semibold text-gray-800">Graduate Student Instructor, University of Michigan (US)</h3>
+                <div class="ml-4">
+                    <ul class="list-disc list-inside mt-1 text-gray-700 text-sm">
+                        <li>Ph.D. in Economics: Macroeconomic Theory</li>
+                        <li>M.Sc. in Applied Economics: Quantitative Methods</li>
+                        <li>Undergraduate: Principles of Macroeconomics, Intermediate Macroeconomics and Microeconomics, and Behavioral Economics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-base font-semibold text-gray-800">Lecturer, Universidad Tecnica Federico Santa Maria (Chile)</h3>
+                <div class="ml-4">
+                    <ul class="list-disc list-inside mt-1 text-gray-700 text-sm">
+                        <li>Introduction to Economics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-base font-semibold text-gray-800">Teaching Assistant, Universidad de Chile (Chile)</h3>
+                <div class="ml-4">
+                    <ul class="list-disc list-inside mt-1 text-gray-700 text-sm">
+                        <li>Ph.D. in Economics: Development</li>
+                        <li>M.Sc. in Applied Economics: Macroeconomic Theory</li>
+                        <li>Master of Public Policy: Urban Policy</li>
+                        <li>Undergraduate: Calculus I and II, Intermediate Microeconomics, Introduction to Macroeconomics, Advanced Macroeconomics, Labor Economics, Environmental Economics, and Urban Economics, among others.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-white text-gray-500 text-sm text-center py-4 mt-12 shadow-inner">
+        <p>&copy; 2025 Esteban Verdugo. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Menu -->
+ 
+
+    <script>
+        function toggleAbstract(abstractId, button) {
+            const abstract = document.getElementById(abstractId);
+            if (abstract.classList.contains('hidden')) {
+                abstract.classList.remove('hidden');
+                button.textContent = 'Hide Abstract';
+            } else {
+                abstract.classList.add('hidden');
+                button.textContent = 'Show Abstract';
+            }
+        }
+        
+        const menuButton = document.getElementById('menu-button');
+        const menuOverlay = document.getElementById('menu-overlay');
+        const closeMenuButton = document.getElementById('close-menu');
+
+        menuButton.addEventListener('click', () => {
+            menuOverlay.classList.remove('hidden');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            menuOverlay.classList.add('hidden');
+        });
+
+        function closeMenu() {
+            menuOverlay.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
